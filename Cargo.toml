@@ -19,7 +19,7 @@ include = [
 
 [dependencies]
 egui = "0.12.0"
-egui-miniquad = "0.4.0"
+egui-miniquad = { git = "https://github.com/not-fl3/egui-miniquad.git" }
 macroquad = "0.3.3"
 
 [dev-dependencies]
