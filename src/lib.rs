@@ -52,7 +52,7 @@ struct Egui(EguiMq, usize);
 // Global variable and global functions because it's more like macroquad way
 static mut EGUI: Option<Egui> = None;
 
-fn get_egui() -> &'static mut Egui {
+pub fn get_egui() -> &'static mut Egui {
     unsafe {
         if let Some(egui) = &mut EGUI {
             egui
